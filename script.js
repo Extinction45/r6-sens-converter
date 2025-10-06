@@ -13,7 +13,7 @@ function hfovFromV(vfov, ar) {
 }
 // Use new/old to match expected behaviour (lowering FOV reduces sensitivity numbers)
 function scaleFactor(oldHF, newHF) {
-  return Math.tan(deg2rad(newHF) / 2) / Math.tan(deg2rad(oldHF) / 2);
+    return Math.tan(deg2rad(newHF) / 2) / Math.tan(deg2rad(oldHF) / 2);
 }
 function fmt(v, p) { return p == 0 ? Math.round(v) : Number(v).toFixed(p); }
 
